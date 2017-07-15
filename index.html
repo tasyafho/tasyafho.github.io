@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    p{
+      font-size:20px; 
+    }
+    #title{
+      color:Blue;
+    }
+    .uline:hover{
+      text-decoration:underline;
+    }
+  </style>
+</head>
+<body>
+  <h2 id="title" class="uline">Buat Account Baru!</h2>
+  <h5>Sign Up Form</h5>
+  
+  <form>
+    <p>First name:</p>
+    <input type="text" name="fname"></br>
+    <p class="uline">Last name:</p>
+    <input type="text" name="lname"></br>
+    <p>Gender:</p>
+    <input type="radio" name="gender" value="male" checked>Male</br>
+    <input type="radio" name="gender" value="female">Female</br>
+    <input type="radio" name="gender" value="Other">Other<br></br>
+    <p>Nationality:</p>
+      <select name="nationality">
+        <option value="Malaysian">Malaysian</option>
+        <option value="Indonesian">Indonesian</option>
+        <option value="Korean">Korean</option>
+      </select><br></br>
+    <p>Language:</p>
+    <input type="checkbox" name="language" value="Bahasa" checked>Bahasa Indonesia</br>
+    <input type="checkbox" name="language" value="English">English</br>
+    <input type="checkbox" name="language" value="Other">Other<br></br>
+    <p>Bio:</p>
+    <textarea name="bio" rows="10" cols="30"></textarea><br></br>
+    <input type="submit" onclick="alert('Success')" value="Sign Up">
+  </form>
+</body>
+</html>
