@@ -1,47 +1,144 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-  <style>
-    p{
-      font-size:20px; 
-    }
-    #title{
-      color:Blue;
-    }
-    .uline:hover{
-      text-decoration:underline;
-    }
-  </style>
-</head>
-<body>
-  <h2 id="title" class="uline">Buat Account Baru!</h2>
-  <h5>Sign Up Form</h5>
-  
-  <form>
-    <p>First name:</p>
-    <input type="text" name="fname"></br>
-    <p class="uline">Last name:</p>
-    <input type="text" name="lname"></br>
-    <p>Gender:</p>
-    <input type="radio" name="gender" value="male" checked>Male</br>
-    <input type="radio" name="gender" value="female">Female</br>
-    <input type="radio" name="gender" value="Other">Other<br></br>
-    <p>Nationality:</p>
-      <select name="nationality">
-        <option value="Malaysian">Malaysian</option>
-        <option value="Indonesian">Indonesian</option>
-        <option value="Korean">Korean</option>
-      </select><br></br>
-    <p>Language:</p>
-    <input type="checkbox" name="language" value="Bahasa" checked>Bahasa Indonesia</br>
-    <input type="checkbox" name="language" value="English">English</br>
-    <input type="checkbox" name="language" value="Other">Other<br></br>
-    <p>Bio:</p>
-    <textarea name="bio" rows="10" cols="30"></textarea><br></br>
-    <input type="submit" onclick="alert('Success')" value="Sign Up">
-  </form>
-</body>
+<html lang="en">
+  <head>
+    <title>Natasya's Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        font-family: Montserrat, sans-serif;
+        line-height: 1.8;
+      }
+      p{
+        font-size:14px;
+      }
+      ul{
+        padding-left:100px;
+      }
+      .bag1{
+        background-color: #CD6161;
+        color:#ffffff;
+      }
+      .bag2{
+        background-color: #ffffff;
+        color: #7A2C2C;
+        font-size: 18px;
+      }
+      .bag3{
+        background-color: #AD3939;
+        color: #ffffff;
+        font-size:18px;
+      }
+      .bag4{
+        background-color: #D7D4D4;
+        color: #0F1847;
+      }
+      /*.row1{
+        padding-left:200px;
+      }*/
+      footer {
+        background-color: #2d2d30;
+        color: #f5f5f5;
+        padding: 32px;
+      }
+      .container-fluid {
+        padding-top: 40px;
+        padding-bottom: 70px;
+      }
+    </style> 
+  </head>
+  <body>
+    <!--header tasya-->
+    <div class="container-fluid bag1 text-center">
+      <img src="https://pbs.twimg.com/profile_images/506794097344933888/vNR_y77Z_400x400.jpeg"
+               class="img-responsive img-circle" style="display:inline" alt="tasya" width="300" height="300">
+      <h2><strong>Natasya Arnanda P<strong></h2>
+        <p>I see my self as a hard worker, a disciplined person, and i have a good time management. I believe I can do my best and give positive contribution to your company. I interact with people from diverse background and I can work well, both individually and within a team. I also a fast learner and have a good motivation for progress and growing.</p>
+    </div>
+        
+    <!--Profile-->
+    <div class="container-fluid bag2">
+      <h2 class="text-center"><strong>Profile<strong></h2>
+      <div class="row coba">
+        <div class="col-md-6 text-center">
+          <h3>Contacs</h3>
+            <div class="row" style="padding-left:40px">
+              <h4>Address</h4>
+              <p>Sawangan Elok Blok BE 3 no. 5</p>
+              <h4>Phone</h4>
+              <p>08119799494</p>
+              <h4>E-mail</h4>
+              <p>tasyafho@gmail.com</p>
+              <h4>Linkedin</h4>
+              <p>linkedin.com/</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <h3 class="text-center">Education</h3>
+            <ul>
+              <li>September 2012 – July 2016  Binus University, Information Technology Faculty – Database Technology</li>
+              <li>Jun 2009 – Jun 2012    SMK TELKOM JAKARTA</li>
+              <li>Jun 2006 – Jun 2009    SMPN 4 Tangsel</li>
+              <li>Jun 2000 – Jun 2006    SDN Duren Seribu 04</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    </div>
+        
+    <!--Experience-->
+    <div class="container-fluid bag3">
+      <div class="row coba">
+      <h2 class="text-center"><strong>Experience<strong></h2>
+      <div class="col-md-6">
+        <div class="row">
+        <h3 class="text-center">Organization Experience</h3>
+          <ul>
+            <li>2014 – Present Karang Taruna Kelurahan Duren Mekar</li>
+            <li>2013 – Present Karang Taruna RW07 Sawangan Elok</li>
+            <li>2011 – Electro Club</li>
+            <li>2015 - Volunteer Mandiri Jakarta Marathon 2015</li>
+            <li>2016 – Volunteer Anime Festival Asia 2016</li>
+          </ul>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <h3 class="text-center">Work Experience</h3>
+            <ul>
+              <li>2011 Internship in Switching Division ARNET Slipi PT. TELKOM</li>
+              <li>2013 – 2015 Tentor in AQILA Course Sawangan</li>
+              <li>2015 Internship in Fatih Creative</li>
+              <li>2016 - Present Junior System Analyst in PT Ecomindo Sarana Cipta</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    </div>
+        
+    <!--AskMe-->
+    <div class="container-fluid bag4 text-center">
+      <h2 class="text-center"><strong>Ask Me</strong></h2>
+      <form class="col-md-6 col-md-offset-3 col-sm-12">
+       <div class="form-group">
+        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required> 
+       </div>
+       <div class="form-group">
+        <input class="form-control" id="subject" name="subj" placeholder="Subject" type="text" required> 
+       </div>
+       <div class="form-group">
+        <textarea class="form-control" id="komen" name="komentar" placeholder="Write Your Comment Here" row="10"></textarea> 
+       </div>
+        <button class="btn btn-primary pull-right" type="submit">Send</button>
+      </form>
+    </div>
+
+  </body>
+  <footer class="text-center">
+    <p>PecobaanPertamaNatasya<p>
+</footer>
 </html>
